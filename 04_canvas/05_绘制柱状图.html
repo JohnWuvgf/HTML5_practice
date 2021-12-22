@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+          }
+          canvas {
+            border: 1px solid #000;
+          }
+        </style>
+    
+
+  </head>
+  <body>
+    <canvas width="800" height="1000"></canvas>
+  </body>
+  <script>
+    let canvas = document.querySelector("canvas");
+    let ctx = canvas.getContext("2d");
+    ctx.font="16px 微软雅黑";
+    ctx.fillText("数据可视化",50,80);
+    ctx.moveTo(100,100);
+    ctx.lineTo(100,400);
+    ctx.lineTo(700,400);
+
+    ctx.moveTo(100,100);
+    ctx.lineTo(700,100);
+
+    ctx.moveTo(100,160);
+    ctx.lineTo(700,160);
+
+    ctx.moveTo(100,220);
+    ctx.lineTo(700,220);
+
+    ctx.moveTo(100,280);
+    ctx.lineTo(700,280);
+
+    ctx.moveTo(100,340);
+    ctx.lineTo(700,340);
+
+    ctx.moveTo(250,400);
+    ctx.lineTo(250,410);
+
+    ctx.moveTo(400,400);
+    ctx.lineTo(400,410);
+
+    ctx.stroke();
+
+    </script>
+</body>
+</html>

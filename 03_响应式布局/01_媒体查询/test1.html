@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #box {
+        width: 100%;
+        height: 500px;
+      }
+      #box div {
+        float: left;
+        height: 200px;
+      }
+      @media screen and (min-device-width: 400px) {
+        #box div {
+          width: 33.3%;
+        }
+        #box div:nth-child(1) {
+          background-color: pink;
+        }
+        #box div:nth-child(2) {
+          background-color: skyblue;
+        }
+        #box div:nth-child(3) {
+          background-color: darkblue;
+        }
+      }
+      @media screen and (min-device-width: 200px) and (max-device-width: 300px) {
+        #box div {
+          width: 50%;
+        }
+        #box div:nth-child(1) {
+          background-color: pink;
+        }
+        #box div:nth-child(2) {
+          background-color: skyblue;
+        }
+        #box div:nth-child(3) {
+          background-color: darkblue;
+        }
+      }
+      @media screen and (min-device-width: 100px) and (max-device-width: 200px) {
+        #box div {
+          width: 100%;
+        }
+        #box div:nth-child(1) {
+          background-color: pink;
+        }
+        #box div:nth-child(2) {
+          background-color: skyblue;
+        }
+        #box div:nth-child(3) {
+          background-color: darkblue;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="box">
+      <div></div>
+      <div></div>
+
+      <div></div>
+    </div>
+  </body>
+</html>
